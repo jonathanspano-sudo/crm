@@ -1,3 +1,5 @@
+import ThemeToggle from "./theme-toggle";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -20,9 +22,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <span className="rounded-full border border-line px-3 py-1 text-xs font-semibold uppercase tracking-widest text-ink-soft">
-            Internal
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="rounded-full border border-line px-3 py-1 text-xs font-semibold uppercase tracking-widest text-ink-soft">
+              Internal
+            </span>
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
