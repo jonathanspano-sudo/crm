@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/*
+ * TMI brand tokens.
+ * White background, black text, orange accents.
+ * Adjust --color-brand once here to retune the whole page.
+ */
+@theme {
+  --color-brand: #f26522;
+  --color-brand-dark: #d9531a;
+  --color-ink: #111111;
+  --color-ink-soft: #555555;
+  --color-paper: #ffffff;
+  --color-line: #e5e5e5;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
